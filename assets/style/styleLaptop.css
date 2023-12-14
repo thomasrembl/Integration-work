@@ -1,0 +1,122 @@
+@media screen and (min-width: 1090px) {
+  .main__content {
+    padding-left: 144px;
+    padding-right: 144px;
+    padding-top: 128px;
+  }
+  .first {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main__content h1 {
+    text-align: left;
+  }
+  .first__title p {
+    font-size: var(--font-size-lg);
+  }
+  .main__content__illustration {
+    width: 334px;
+    height: 260px;
+  }
+  .main__content__text {
+    max-width: 380px;
+  }
+  .main__content__text p {
+    font-size: var(--font-size-lg);
+  }
+  .main__content__social {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+    margin-top: 164px;
+  }
+  .main__content__social p {
+    font-size: var(--font-size-md);
+  }
+  .main__content__social__img {
+    gap: 64px;
+  }
+  .main__content__social__img img:nth-child(1) {
+    width: 107.685px;
+    height: 43.481px;
+  }
+  .main__content__social__img img:nth-child(2) {
+    width: 153.425px;
+    height: 75px;
+  }
+  .main__content__social__img img:nth-child(3) {
+    width: 147.231px;
+    height: 56.268px;
+  }
+  .second {
+    padding: 32px 144px;
+  }
+  .second__content {
+    flex-direction: row;
+  }
+  .third {
+    padding: 64px 144px;
+    flex-direction: row;
+  }
+  .third__top p {
+    font-size: var(--font-size-md);
+  }
+  .third__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fourth {
+    padding: 64px 144px;
+    flex-direction: row-reverse;
+  }
+  .fourth__bottom {
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .fourth__bottom p {
+    font-size: var(--font-size-md);
+  }
+  .fourth__bottom img {
+    width: 364.909px;
+    height: 350px;
+  }
+  .fifth {
+    padding: 64px 144px;
+    flex-direction: row;
+  }
+  .fifth__title {
+    flex: 1 0 0;
+  }
+  .fifth__content {
+    flex: 1 0 0;
+  }
+  .sixth,
+  .seventh {
+    padding: 64px 144px;
+  }
+  .sixth__card {
+    flex-direction: row;
+    align-self: stretch;
+  }
+  .sixth p {
+    font-size: var(--font-size-md);
+  }
+  .sixth p:nth-child(2) {
+    font-size: var(--font-size-lg);
+  }
+  .eighth {
+    padding: 96px 144px;
+    flex-direction: row;
+    gap: 128px;
+  }
+  .eighth img:nth-child(1) {
+    width: 288.883px;
+    height: 225px;
+  }
+  .eighth p {
+    font-size: var(--font-size-md);
+  }
+}

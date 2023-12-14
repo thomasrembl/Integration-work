@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700&display=swap");
+:root {
+  --brand-main-050: #fff0e2;
+  --brand-main-100: #f7d5ba;
+  --brand-main-200: #efb990;
+  --brand-main-300: #e79d64;
+  --brand-main-400: #e1823a;
+  --brand-main-500: #c76820;
+  --brand-main-600: #9b5018;
+  --brand-main-700: #6f3910;
+  --brand-main-800: #442107;
+  --brand-main-900: #1b0900;
+
+  --brand-secondary-050: #feefe7;
+  --brand-secondary-100: #e5d5cd;
+  --brand-secondary-200: #cebab0;
+  --brand-secondary-300: #b99f92;
+  --brand-secondary-400: #a48474;
+  --brand-secondary-500: #8b6a5b;
+  --brand-secondary-600: #6d5246;
+  --brand-secondary-700: #4f3b31;
+  --brand-secondary-800: #31221c;
+  --brand-secondary-900: #180901;
+
+  --gray-050: #eeeefd;
+  --gray-100: #d0d2e4;
+  --gray-200: #b2b7cd;
+  --gray-300: #949ab8;
+  --gray-400: #757fa3;
+  --gray-500: #5c6889;
+  --gray-600: #47526b;
+  --gray-700: #323b4d;
+  --gray-800: #1d2330;
+  --gray-900: #050a16;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --font-family: "Reem Kufi";
+  --zen-font-family: "Zen Kaku Gothic Antique", sans-serif;
+
+  --font-size-2xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-mega: 128px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--zen-font-family);
+  color: var(--gray-900);
+  cursor: pointer;
+  position: relative;
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);
+  color: var(--brand-main-900);
+  cursor: default;
+}
+h2 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--brand-secondary-700);
+  cursor: default;
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  color: var(--gray-900);
+  cursor: default;
+}
+h4 {
+  font-family: var(--zen-font-family);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  color: var(--gray-900);
+  cursor: default;
+}
+p {
+  font-family: var(--zen-font-family);
+  color: var(--gray-900);
+  cursor: default;
+}
+
+.scale:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.link__animation::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--brand-secondary-500);
+  transition: width 0.3s ease;
+}
+.link__animation:hover::before {
+  width: 100%;
+}
+@media screen and (min-width: 1090px) {
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  h2 {
+    font-size: var(--font-size-3xl);
+  }
+  h3 {
+    font-size: var(--font-size-2xl);
+  }
+  h4 {
+    font-size: var(--font-size-xl);
+  }
+  main {
+    gap: 128px;
+  }
+}
